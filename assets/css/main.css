@@ -1,0 +1,94 @@
+@import './base.css';
+
+.categories-section,
+.products-section,
+.products-by-category {
+    padding: 20px 0px;
+}
+
+.categories-section .container,
+.products-section .container,
+.products-by-category .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.categories-section .row {
+    border-radius: 5px;
+    padding: 20px;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+}
+
+.categories-section h2,
+.products-section h2,
+.products-by-category h2 {
+    width: fit-content;
+    padding-bottom: 3px;
+    border-bottom: blue solid 2px;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category a {
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.category i {
+    font-size: 14px;
+    color: blue;
+}
+
+.products-section .row {
+    gap: 5px;
+}
+
+.product {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px 0px;
+    gap: 10px;
+}
+
+.product h3 {
+    text-align: center;
+    font-size: 16px;
+    width: 150px;
+    font-weight: bold;
+}
+
+img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
